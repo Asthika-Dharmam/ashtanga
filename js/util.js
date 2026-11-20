@@ -40,7 +40,7 @@ export const isDate = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s || '') && !Number.isNa
 
 export function longDate(s) {
   const d = parseDate(s);
-  return `${WD3[d.getUTCDay()]}, ${d.getUTCDate()} ${MON[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  return `${WD3[d.getUTCDay()]}, ${d.getUTCDate()} ${MON[d.getUTCMonth()].slice(0, 3)} ${d.getUTCFullYear()}`;
 }
 export function shortDate(s) {
   const d = parseDate(s);
