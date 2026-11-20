@@ -281,3 +281,9 @@ details summary { cursor: pointer; color: var(--accent); font-size: .88rem; padd
 .past-month summary.month::before { content: '›'; font-size: 1rem; transition: transform .15s; }
 .past-month[open] summary.month::before { transform: rotate(90deg); }
 .past-month summary .n { margin-left: auto; text-transform: none; letter-spacing: 0; font-size: .78rem; }
+
+/* Panchanga: the times card's two tabs. */
+.times { display: block; }
+.segs.small { margin-bottom: .6rem; }
+.segs.small .seg { padding: .35rem .5rem; font-size: .9rem; }
+.times-body ul { list-style: none; margin: 0; padding: 0; }

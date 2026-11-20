@@ -1,6 +1,6 @@
 // Panchanga: the day at a glance. The five angas with when each ends and what follows, the sun and
-// moon, the times to keep clear of and the good ones, and the day's festivals of both kinds.
-import { h, svg, span, moonIcon } from './util.js';
+// moon, rAhu, yama and gulika or the five kAlas of the day, and the day's festivals of both kinds.
+import { h, svg, span, moonIcon, saveSettings } from './util.js';
 import { ICONS } from './icons.js';
 import { festivalsOf, festLabel } from './festivals.js';
 
@@ -51,36 +51,34 @@ export async function renderPanchanga(ctx, root) {
     angaRow('Yoga', S.yoga, day.yoga, ctx, t),
     angaRow('Karaṇa', S.karana, day.karana, ctx, t));
 
-  // Times to keep clear of, and the good ones.
-  const timeRow = (label, val, now) => h('li', { class: now ? 'now' : '' }, h('span', null, label), h('time', null, val));
+  // The day's times, in two tabs: rAhu, yama and gulika; and the five kAlas of the day and the
+  // dinAnta (from the panchaanga; prAtaH begins at sunrise, sAyAhna ends at sunset).
+  const timeRow = (label, val, now, sa) => h('li', { class: now ? 'now' : '' }, h('span', sa ? { lang: 'sa' } : null, label), h('time', null, val));
   const inSpan = (a, b) => t != null && t >= a && t < b;
-  const TYAJYA = { ti: 'tithi', na: 'nakṣatra', vaa: 'vāra' };
-  const avoid = [
-    ['Rāhu kālam', day.raahu],
-    ['Yamagaṇḍam', day.yama],
-    ['Gulika kālam', day.gulika],
-    ...(day.durmuhurta || []).map((s) => ['Durmuhūrtam', s]),
-    ...(day.tyajya || []).map(([a, b, k]) => [`Varjyam (${TYAJYA[k] || k} tyājyam)`, [a, b]]),
-  ].filter(([, s]) => s);
-  const good = [
-    ['Abhijit muhūrtam', day.abhijit],
-    ...(day.amrta || []).map((s) => ['Amṛta kālam', s]),
-  ].filter(([, s]) => s);
-  const times = h('section', { class: 'card times' },
-    h('div', { class: 'col avoid' }, h('h2', null, svg(ICONS.avoid), 'To avoid'),
-      h('ul', null, avoid.map(([l, [a, b]]) => timeRow(l, span(a, b, ctx.settings.twelve), inSpan(a, b))))),
-    h('div', { class: 'col good' }, h('h2', null, svg(ICONS.good), 'Auspicious'),
-      h('ul', null, good.map(([l, [a, b]]) => timeRow(l, span(a, b, ctx.settings.twelve), inSpan(a, b))))));
-
-  // The moon's rashi, shula and the day's amritadi yoga.
-  const [r1, rEnd] = day.rashi;
-  const moonRashi = rEnd != null ? `${S.rashi[r1]} (till ${T(rEnd)}) → ${S.rashi[(r1 % 12) + 1]}` : S.rashi[r1];
-  const shula = S.shula[day.wd];
-  const more = h('section', { class: 'card facts' },
-    h('dl', null,
-      h('div', null, h('dt', null, 'Moon in'), h('dd', { lang: 'sa' }, moonRashi)),
-      shula ? h('div', null, h('dt', null, 'Śūlam · parihāram'), h('dd', { lang: 'sa' }, `${shula[0]} · ${shula[1]}`)) : null,
-      day.amritadi?.length ? h('div', null, h('dt', null, 'Yoga of the day'), h('dd', { lang: 'sa' }, day.amritadi.map((k) => S.amritadi[k] || k).join(', '))) : null));
+  const twelve = ctx.settings.twelve;
+  const avoid = [['Rāhu kālam', day.raahu], ['Yamagaṇḍam', day.yama], ['Gulika kālam', day.gulika]].filter(([, x]) => x);
+  const K = S.kaala || {};
+  const k = day.kala || {};
+  const bounds = [day.sun[0], k.saangava, k.madhyaahna, k.aparaahna, k.saayaahna, day.sun[1]];
+  const kalas = ['praatah', 'saangava', 'madhyaahna', 'aparaahna', 'saayaahna']
+    .map((id, n) => [K[id] || id, [bounds[n], bounds[n + 1]]]).filter(([, [a, b]]) => a != null && b != null);
+  const lists = {
+    avoid: h('ul', null, avoid.map(([l, [a, b]]) => timeRow(l, span(a, b, twelve), inSpan(a, b)))),
+    kala: h('ul', null, kalas.map(([l, [a, b]]) => timeRow(l, span(a, b, twelve), inSpan(a, b), true)),
+      k.dinaanta != null ? timeRow(K.dinaanta || 'dinaanta', T(k.dinaanta), false, true) : null),
+  };
+  let shown = ctx.settings.timesTab === 'kala' ? 'kala' : 'avoid';
+  const body = h('div', { class: 'times-body' });
+  const tabs = h('div', { class: 'segs small no-swipe', role: 'tablist' });
+  const drawTimes = () => {
+    tabs.replaceChildren(...[['avoid', 'To avoid'], ['kala', 'Kālas']].map(([id, label]) => h('button', {
+      class: 'seg' + (shown === id ? ' on' : ''), role: 'tab', 'aria-selected': String(shown === id),
+      onclick: () => { shown = id; ctx.settings.timesTab = id; saveSettings(ctx.settings); drawTimes(); },
+    }, label)));
+    body.replaceChildren(lists[shown]);
+  };
+  drawTimes();
+  const times = h('section', { class: 'card times' }, tabs, body);
 
   const { ashtanga, panchanga } = festivalsOf(ctx, day);
   const fest = (ashtanga.length || panchanga.length) ? h('section', { class: 'card fests' },
@@ -88,6 +86,6 @@ export async function renderPanchanga(ctx, root) {
     ashtanga.length ? h('ul', { class: 'fest-list a' }, ashtanga.map((f) => h('li', { lang: 'sa', class: f.kind }, festLabel(h, ctx, f)))) : null,
     panchanga.length ? h('ul', { class: 'fest-list p' }, panchanga.map((f) => h('li', { lang: 'sa' }, f.name))) : null) : null;
 
-  root.append(head, fest, angas, times, more,
+  root.append(head, fest, angas, times,
     h('p', { class: 'foot' }, 'Times for ', ctx.city.label, ' (', ctx.city.tz, '). A * marks a time after midnight, before the next sunrise.'));
 }

@@ -104,6 +104,9 @@ def build_days(src, city, year, fest_repo, used, groups):
       if not (year['start'] <= d['date'] <= year['end']):
         continue
       out = {k: d[k] for k in DAY_FIELDS if k in d}
+      # The five kAlas' starts (prAtaH is sunrise) and the dinAnta, as the panchaanga gives them.
+      if 'kala' in d:
+        out['kala'] = {k: d['kala'][k] for k in ('saangava', 'madhyaahna', 'aparaahna', 'saayaahna', 'dinaanta') if k in d['kala']}
       # The abhijit muhUrta: the eighth of the fifteen day muhUrtas (the list holds their ends).
       mu = d.get('muhurta')
       if mu and len(mu[0]) >= 8:
@@ -135,8 +138,8 @@ def build_script(src, script, used, hk):
   names = load(os.path.join(src, 'text', script, 'fest.json'))
   out = {k: static[k] for k in STATIC_FIELDS if k in static}
   out['fest'] = {k: names.get(k, k) for k in sorted(used)}
-  # The kAlas of the pUjA times on parva days.
-  out['kaala'] = {k: static['kaala'][k] for k in ('pradosha', 'madhyaraatri', 'aparaahna') if k in static.get('kaala', {})}
+  # The kAlas: of the pUjA times on parva days, and the five of the day and the dinAnta.
+  out['kaala'] = {k: static['kaala'][k] for k in ('pradosha', 'madhyaraatri', 'praatah', 'saangava', 'madhyaahna', 'aparaahna', 'saayaahna', 'dinaanta') if k in static.get('kaala', {})}
   T = lambda s: tr(s, script)
   N = lambda s: tr(s, script, names=True)
   a = {k: [N(x) for x in hk[k]] for k in ('tattva', 'rtu', 'nityamasa', 'kalamasa', 'nitya30',

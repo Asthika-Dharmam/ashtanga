@@ -1,7 +1,7 @@
 // Offline support. The shell is cached on install; data files as they are read (and prefetched,
 // js/data.js). Served stale-while-revalidate, so a visit online refreshes what a later visit offline
 // will see. Raise VERSION after changing any file under js/ or css/.
-const VERSION = 'v9';
+const VERSION = 'v10';
 const CACHE = 'ashtanga-' + VERSION;
 const SHELL = ['./', 'index.html', 'css/app.css', 'js/app.js', 'js/util.js', 'js/data.js', 'js/icons.js',
   'js/ashtanga.js', 'js/panchanga-sankalpa.js', 'js/festivals.js', 'js/view-panchanga.js', 'js/view-ashtanga.js',
