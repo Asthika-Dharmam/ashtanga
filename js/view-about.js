@@ -1,5 +1,5 @@
 // About: Asthika Dharmam, ordering the panchangam, the WhatsApp and Telegram channels, the
-// Ashtangam, settings, and where the data comes from. The links are as asthikadharmam.org gives them
+// Ashtangam, settings, and where the data comes from. The logo is the site's banner. The links are as asthikadharmam.org gives them
 // (asthikadharmam-panchangam/, about/, contact/).
 import { h, svg } from './util.js';
 import { ICONS } from './icons.js';
@@ -9,6 +9,7 @@ const ORDER_PAGE = 'https://asthikadharmam.org/asthikadharmam-panchangam/';
 const ORDER_FORM = 'https://forms.gle/X37VdweCQ3CeAZwN7';
 const RETAIL_WA = 'https://wa.me/919940100056';
 const TELEGRAM = 'https://t.me/ashtangam';
+const YOUTUBE = 'https://www.youtube.com/@AsthikaDharmamChannel';
 const ZONES = [
   ['Chennai', 'https://chat.whatsapp.com/L38s98PZq1zISVDNntr2eH'],
   ['Delhi', 'https://chat.whatsapp.com/EE1zRX75lDP2NBBuWChDR7'],
@@ -30,8 +31,7 @@ export async function renderAbout(ctx, root) {
   const b = index.build || {};
 
   const intro = h('section', { class: 'card about-hero' },
-    h('img', { src: 'icons/icon.svg', alt: '', width: 56, height: 56 }),
-    h('h2', null, 'Asthika Dharmam'),
+    h('img', { class: 'logo', src: 'icons/asthikadharmam.png', alt: 'Asthika Dharma: आस्तिक-धर्मः, ஆஸ்திக தர்மம்', width: 768, height: 296 }),
     h('p', { class: 'motto', lang: 'sa' }, 'धर्मो रक्षति रक्षितः'),
     h('p', null, 'Asthika Dharmam is concerned with the promotion of spiritual activities and the publication of religious books (under “Asthika Dharmam Publications”) such as those related to the performance of Hindu rituals, e.g. Sandhyavandanam.'),
     h('p', null, 'This app is its companion for the few who keep the Śākta Aṣṭāṅga: the day’s pañcāṅga and aṣṭāṅga, both sankalpas, and the year’s festivals, on the phone and offline.'),
@@ -48,7 +48,8 @@ export async function renderAbout(ctx, root) {
   const channels = h('section', { class: 'card' },
     h('h2', null, 'Every day, on your phone'),
     h('div', { class: 'actions' },
-      action(TELEGRAM, 'telegram', 'Ashtanga sankalpa on Telegram', 't.me/ashtangam')),
+      action(TELEGRAM, 'telegram', 'Ashtanga sankalpa on Telegram', 't.me/ashtangam'),
+      action(YOUTUBE, 'youtube', 'Asthika Dharmam on YouTube', '@AsthikaDharmamChannel')),
     h('p', { class: 'sub' }, 'Daily Vākya Pañcāṅgam on WhatsApp, by zone:'),
     h('div', { class: 'zones' }, ZONES.map(([z, href]) => ext(href, svg(ICONS.whatsapp), z))));
 

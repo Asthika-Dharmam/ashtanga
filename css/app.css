@@ -192,6 +192,7 @@ details summary { cursor: pointer; color: var(--accent); font-size: .88rem; padd
 .sankalpa { line-height: 1.85; padding-top: .4rem; }
 .sankalpa p { margin: 0 0 .35rem; }
 .sankalpa p.title { color: var(--accent); margin-bottom: .6rem; }
+.sankalpa p.title:not(:first-child) { margin-top: 1.4rem; padding-top: 1rem; border-top: 1px dashed var(--hair); }
 .sankalpa strong { color: var(--band); font-weight: 700; }
 :root[data-theme="dark"] .sankalpa strong { color: var(--gold); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sankalpa strong { color: var(--gold); } }
@@ -222,6 +223,7 @@ details summary { cursor: pointer; color: var(--accent); font-size: .88rem; padd
 
 /* About */
 .about-hero { text-align: center; }
+.about-hero .logo { display: block; width: 100%; height: auto; border-radius: .7rem; background: #fdf2d0; }
 .about-hero h2 { justify-content: center; font-size: 1.15rem; text-transform: none; letter-spacing: .01em; color: var(--ink); margin: .4rem 0 0; }
 .motto { color: var(--accent); font-size: 1.15rem; margin: .1rem 0 .6rem; }
 .about-hero p { text-align: left; }

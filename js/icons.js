@@ -22,5 +22,6 @@ export const ICONS = {
   telegram: s('<path d="M20.5 4 3.5 11l5.5 2 2 6 3-4 4.5 3.5Z"/><path d="m9 13 8.5-6"/>'),
   phone: s('<path d="M5 4h4l1.5 4-2.2 1.4a11 11 0 0 0 6.3 6.3L16 13.5l4 1.5v4a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4Z"/>'),
   book: s('<path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5Z"/>'),
+  youtube: s('<rect x="3" y="5.5" width="18" height="13" rx="3.5"/><path d="m10.2 9.3 4.6 2.7-4.6 2.7Z" fill="currentColor"/>'),
   bindu: s('<circle cx="12" cy="12" r="3" fill="currentColor"/>'),
 };
