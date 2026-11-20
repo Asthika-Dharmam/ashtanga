@@ -140,6 +140,8 @@ button { font: inherit; color: inherit; }
 .fest-list.a li { background: var(--accent-wash); border-color: transparent; }
 .fest-list.a li.visesha { background: var(--gold-wash); }
 .fest-list + .fest-list { margin-top: .5rem; }
+.puja { display: block; font-family: var(--sans); font-size: .78rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.fest-list li .puja { margin-top: .05rem; }
 
 /* Ashtanga */
 .vidya-card { text-align: center; background: linear-gradient(180deg, var(--card), var(--gold-wash)); }

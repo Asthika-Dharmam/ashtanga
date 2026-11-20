@@ -2,7 +2,7 @@
 // moon, the times to keep clear of and the good ones, and the day's festivals of both kinds.
 import { h, svg, span, moonIcon } from './util.js';
 import { ICONS } from './icons.js';
-import { festivalsOf } from './festivals.js';
+import { festivalsOf, festLabel } from './festivals.js';
 
 // One anga: each span from sunrise, with its end, and what runs at the next sunrise.
 function angaRow(label, names, spans, ctx, t, extra) {
@@ -85,7 +85,7 @@ export async function renderPanchanga(ctx, root) {
   const { ashtanga, panchanga } = festivalsOf(ctx, day);
   const fest = (ashtanga.length || panchanga.length) ? h('section', { class: 'card fests' },
     h('h2', null, 'Today’s festivals'),
-    ashtanga.length ? h('ul', { class: 'fest-list a' }, ashtanga.map((f) => h('li', { lang: 'sa' }, f.name))) : null,
+    ashtanga.length ? h('ul', { class: 'fest-list a' }, ashtanga.map((f) => h('li', { lang: 'sa', class: f.kind }, festLabel(h, ctx, f)))) : null,
     panchanga.length ? h('ul', { class: 'fest-list p' }, panchanga.map((f) => h('li', { lang: 'sa' }, f.name))) : null) : null;
 
   root.append(head, fest, angas, times, more,

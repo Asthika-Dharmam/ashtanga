@@ -1,6 +1,6 @@
 // Festivals: the Kali year's festivals, Ashtanga or Panchanga, by month, opening at the next one.
 import { h, parseDate, WD3, MON, saveSettings } from './util.js';
-import { festivalsOf } from './festivals.js';
+import { festivalsOf, festLabel } from './festivals.js';
 
 const KINDS = [['all', 'All'], ['parva', 'Parvas'], ['mahavidya', 'Mahāvidyās'], ['navaratri', 'Navarātras'], ['visesha', 'Viśeṣa puṇyakālas']];
 
@@ -58,7 +58,7 @@ export async function renderFestivals(ctx, root) {
       ul.append(h('li', { class: date < live ? 'past' : date === live ? 'today' : '', 'data-date': date },
         h('button', { class: 'row-date', onclick: () => ctx.go({ tab: which === 'ashtanga' ? 'ashtanga' : 'panchanga', date }) },
           h('b', null, dt.getUTCDate()), h('small', null, WD3[dt.getUTCDay()])),
-        h('div', { class: 'row-names', lang: 'sa' }, f.map((x) => h('span', { class: `fn ${x.kind}` }, x.name)))));
+        h('div', { class: 'row-names', lang: 'sa' }, f.map((x) => h('span', { class: `fn ${x.kind}` }, festLabel(h, ctx, x))))));
     }
     list.replaceChildren(...(out.length ? out : [h('p', { class: 'empty' }, 'Nothing here.')]));
     const next = list.querySelector('li.today, li:not(.past)');

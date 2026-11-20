@@ -132,6 +132,8 @@ def build_script(src, script, used, hk):
   names = load(os.path.join(src, 'text', script, 'fest.json'))
   out = {k: static[k] for k in STATIC_FIELDS if k in static}
   out['fest'] = {k: names.get(k, k) for k in sorted(used)}
+  # The kAlas of the pUjA times on parva days.
+  out['kaala'] = {k: static['kaala'][k] for k in ('pradosha', 'madhyaraatri', 'aparaahna') if k in static.get('kaala', {})}
   T = lambda s: tr(s, script)
   N = lambda s: tr(s, script, names=True)
   a = {k: [N(x) for x in hk[k]] for k in ('tattva', 'rtu', 'nityamasa', 'kalamasa', 'nitya30',

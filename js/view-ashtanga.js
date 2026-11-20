@@ -3,7 +3,7 @@
 import { h, svg, shortDate, parseDate, WD3 } from './util.js';
 import { ICONS } from './icons.js';
 import { ashtanga, vidya, tithiAt } from './ashtanga.js';
-import { festivalsOf, isNavavarana, inNavaratri } from './festivals.js';
+import { festivalsOf, isNavavarana, inNavaratri, festLabel } from './festivals.js';
 
 const row = (label, ...value) => h('div', { class: 'row' }, h('dt', { lang: 'sa' }, label), h('dd', { lang: 'sa' }, ...value));
 
@@ -27,7 +27,7 @@ export async function renderAshtanga(ctx, root) {
       h('span', { class: 'chip' }, 'Kalyahargaṇa ', h('b', null, a.k.toLocaleString('en-IN'))),
       h('span', { class: 'chip' }, 'Tattva-divasa ', h('b', null, `${a.divasaNo}/36`)),
       navavarana ? h('span', { class: 'chip gold' }, svg(ICONS.ashtanga), h('span', { lang: 'sa' }, A.phrases.navavarana)) : null),
-    fests.length ? h('ul', { class: 'fest-list a' }, fests.map((f) => h('li', { lang: 'sa', class: f.kind }, f.name))) : null);
+    fests.length ? h('ul', { class: 'fest-list a' }, fests.map((f) => h('li', { lang: 'sa', class: f.kind }, festLabel(h, ctx, f)))) : null);
 
   const tithis = a.tithis.map(({ id, end }) => h('span', { class: 'tn' + (nowTithi === id ? ' now' : '') },
     A.nitya30[id - 1], end != null ? h('small', null, ` till ${T(end)}`) : null));
