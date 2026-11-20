@@ -110,7 +110,10 @@ function drawHeader(ctx, spec) {
   const top = h('div', { class: 'bar' },
     h('a', { class: 'brand', href: '#panchanga' }, h('img', { src: 'icons/icon.svg', alt: '', width: 28, height: 28 }),
       h('span', null, h('b', null, 'Ashtanga'), h('small', null, 'Asthika Dharmam'))),
-    h('div', { class: 'picks' }, scriptPick, cityPick));
+    h('div', { class: 'picks' }, scriptPick, cityPick,
+      // Settings: the About tab, at its Settings card.
+      h('a', { class: 'gear', href: '#about/settings', 'aria-label': 'Settings', title: 'Settings',
+        onclick: () => { if (location.hash === '#about/settings') document.getElementById('settings')?.scrollIntoView({ block: 'start' }); } }, svg(ICONS.gear))));
   const rows = [top];
   if (spec.dated) {
     const isLive = date === live.date;

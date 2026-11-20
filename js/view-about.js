@@ -95,4 +95,6 @@ export async function renderAbout(ctx, root) {
     h('p', null, 'The full pañcāṅga, with every kāla, muhūrta and observance: ', ext('https://adyatithi.github.io/panchaanga/', 'Adyatithi Panchaanga'), '.'));
 
   root.append(intro, ashtangam, order, channels, prefs, contact, thanks, dataNote);
+  // Opened from the header's gear (#about/settings): at the Settings card.
+  if (/\/settings$/.test(location.hash)) requestAnimationFrame(() => prefs.scrollIntoView({ block: 'start' }));
 }

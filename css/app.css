@@ -73,10 +73,22 @@ button { font: inherit; color: inherit; }
 .city { display: flex; align-items: center; gap: .25rem; background: var(--band-2); border-radius: 999px; padding: .2rem .35rem .2rem .6rem; }
 .city select { background: transparent; color: inherit; border: 0; font: inherit; font-size: .92rem; padding: .25rem .1rem; max-width: 9.5rem; }
 .city select option { color: #1d1c33; }
-.picks { display: flex; gap: .35rem; min-width: 0; }
+.picks { display: flex; gap: .35rem; min-width: 0; align-items: center; }
+.gear { flex: none; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 50%; color: inherit; background: var(--band-2); }
+.gear:hover { filter: brightness(1.15); }
 .script-pick { padding: .2rem .45rem; }
 .script-pick select { max-width: 3.2rem; font-family: var(--indic); font-size: 1.05rem; }
-@media (max-width: 380px) { .brand small { display: none; } .city select { max-width: 6.5rem; } }
+.picks { flex: 0 1 auto; }
+.city { min-width: 0; }
+.city select { min-width: 0; }
+/* On a phone: the logo without the name, and the city without its pin, so the gear fits. */
+@media (max-width: 440px) {
+  .brand span { display: none; }
+  .bar { gap: .3rem; }
+  .city:not(.script-pick) > .ico { display: none; }
+  .city { padding-left: .7rem; }
+  .city select { max-width: 8.5rem; }
+}
 .datebar { padding: .1rem 0 .6rem; }
 .datebar .nav { flex: none; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 0; background: transparent; color: inherit; display: grid; place-items: center; cursor: pointer; }
 .datebar .nav:disabled { opacity: .3; }
@@ -287,3 +299,4 @@ details summary { cursor: pointer; color: var(--accent); font-size: .88rem; padd
 .segs.small { margin-bottom: .6rem; }
 .segs.small .seg { padding: .35rem .5rem; font-size: .9rem; }
 .times-body ul { list-style: none; margin: 0; padding: 0; }
+#settings { scroll-margin-top: .9rem; }
