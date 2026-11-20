@@ -1,12 +1,12 @@
 // Sankalpa: the Shakta Ashtanga sankalpa (as the Telegram bot and the Ashtangam print it), the
-// panchanga sankalpa (the panchaanga's, js/sankalpa.js), or both together, the panchanga one first
+// panchanga sankalpa (js/panchanga-sankalpa.js, as the daily sankalpa ICS writes it), or both together, the panchanga one first
 // and the dinanityAvidyA last, as the daily ICS has them. Each is as printed: from sunrise, with each
 // change of anga and its time in brackets. Large type that can be made larger, to copy or share.
 // In Devanagari the times are in Devanagari digits, as the ICS prints them.
 import { h, svg, rich, saveSettings } from './util.js';
 import { ICONS } from './icons.js';
 import { ashtanga, ashtangaSankalpa, vidya } from './ashtanga.js';
-import { sankalpaText } from './sankalpa.js';
+import { panchangaSankalpa } from './panchanga-sankalpa.js';
 
 // The text to copy or share, formatted for WhatsApp: *bold* kept (bold runs joined by a hyphen or
 // a space are merged, as WhatsApp will not bold *a*-*b*; a bold running into a word is carried to
@@ -53,7 +53,7 @@ export async function renderSankalpa(ctx, root) {
   const ashtangaLines = () => [`*${P.title}*`, ...ashtangaSankalpa(A, a, T)];
   const vidyaLine = () => `*${P.vidyA}* – ${vidya(A, a)}`;
   const panchangaLines = () => [`*${P.panca_title}*`, P.panca_head,
-    ...sankalpaText(day, year.samvatsara, S.sankalpa, T).split('\t').map((p) => p.trim()).filter(Boolean)];
+    ...panchangaSankalpa(day, year.samvatsara, S.sankalpa, T).map((p) => p.trim()).filter(Boolean)];
   const LINES = {
     ashtanga: () => [...ashtangaLines(), vidyaLine()],
     panchanga: panchangaLines,

@@ -65,7 +65,10 @@ The ICS generator's nityāmelana test never fires (it compares the tithinityā's
 app follows the monthly generator, which compares the first, and the PDF marks नित्यामेलनम्
 accordingly.
 
-The pañcāṅga sankalpa is `js/sankalpa.js` from the panchaanga, unchanged.
+The pañcāṅga sankalpa (`js/panchanga-sankalpa.js`) is written as kamakoti-panchangam's daily sankalpa ICS
+(`drik/bin/write_daily_panchanga_sankalpa_ics.py`) writes it: each aṅga from sunrise and, if it ends by
+22:00, its end and the aṅga that follows, bracketed in turn, the last marked ➥ —
+पूर्वप्रोष्ठपदा-नक्षत्र (०६:५४; उत्तरप्रोष्ठपदा-नक्षत्र ➥) युक्तायां. The words are the panchaanga's.
 
 ## Data
 
