@@ -20,7 +20,7 @@ const ZONES = [
   ['Madurai', 'https://chat.whatsapp.com/IO8uNw84mnvJCk2VnjrJbU'],
   ['Tanjavur', 'https://chat.whatsapp.com/DVbmSxFNefHGAPXoRi5Y09'],
 ];
-const SCRIPT_NAMES = { devanagari: 'देवनागरी', tamil: 'தமிழ்', grantha: '𑌗𑍍𑌰𑌨𑍍𑌥', telugu: 'తెలుగు', kannada: 'ಕನ್ನಡ', iso: 'Roman (ISO)' };
+const SCRIPT_NAMES = { devanagari: 'देवनागरी (Devanagari)', tamil: 'தமிழ் (Tamil)', grantha: '𑌗𑍍𑌰𑌨𑍍𑌥 (Grantha)', telugu: 'తెలుగు (Telugu)', kannada: 'ಕನ್ನಡ (Kannada)', iso: 'Roman (ISO)' };
 
 const ext = (href, ...children) => h('a', { href, target: '_blank', rel: 'noopener' }, ...children);
 const action = (href, icon, title, sub) => h('a', { class: 'action', href, target: '_blank', rel: 'noopener' },
