@@ -6,7 +6,8 @@
 //
 // Allowed for: the spellings this app takes from the Ashtangam PDF and the calculation sheet where
 // the ICS's tables differ (अम्/अं, घ्राणं/घ्राणम्, ॐ/ओं ...), and the ICS generator's nityAmElana test,
-// which never fires (it compares the tithinityA's last word). A tithi's end may differ by a minute.
+// which never fires (it compares the tithinityA's last word), and the tithinityA's form: the ICS's
+// A (t); B is read as this app's A (t; B ➥). A tithi's end may differ by a minute.
 import { readFileSync } from 'node:fs';
 import { ashtanga, ashtangaSankalpa, vidya } from '../js/ashtanga.js';
 
@@ -45,7 +46,13 @@ for (const [date, text] of Object.entries(ics)) {
   const a = ashtanga(day);
   a.visesha = a.visesha.filter((v) => v !== 'nityAmElanam');
   const mine = norm(`${A.phrases.title} ${ashtangaSankalpa(A, a, T).join(' ')} ${A.phrases.vidyA} ${vidya(A, a)}`);
-  const theirs = norm(text.replace(/\*?दिननित्याविद्या\*?–(\S+)/, (_, v) => `दिननित्याविद्या ${v}`));
+  // The ICS's tithinityA, A (t); B, in this app's bracketed form, A (t; B ➥).
+  const nested = (s) => s.replace(/\*([^*]*)\* तिथिनित्यायां/, (_, x) => {
+    const items = x.split('; ').map((it) => it.match(/^(.*?)(?: \(([^)]*)\))?$/));
+    const build = (i) => (items[i][2] && i + 1 < items.length ? `${items[i][1]} (${items[i][2]}; ${build(i + 1)})` : `${items[i][1]}${i ? ' ➥' : ''}`);
+    return `*${build(0)}* तिथिनित्यायां`;
+  });
+  const theirs = norm(nested(text).replace(/\*?दिननित्याविद्या\*?–(\S+)/, (_, v) => `दिननित्याविद्या ${v}`));
   // The ICS's vidyA is transliterated with a halanta between its parts (क्ष् आ … joined): compare letters only.
   const strip = (s) => s.replace(/दिननित्याविद्या (\S+)$/, (_, v) => `दिननित्याविद्या ${v.replace(/[्ािीुूृॄॢॣेैोौ]/g, '').replace(/[आई]/g, '')}`);
   if (strip(mine) === strip(theirs)) { ok++; continue; }

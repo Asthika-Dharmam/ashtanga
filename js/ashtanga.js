@@ -116,11 +116,16 @@ export function ashtanga(day) {
   return a;
 }
 
-// The tithinityA names: of the tithis from sunrise (with their ends, as `T` writes a time), or of the one
-// running at minute `t`.
-export function tithiNityaText(A, a, T, t = null) {
-  if (t != null) return null;
-  return a.tithis.map(({ id, end }) => A.nitya30[id - 1] + (end != null ? ` (${T(end)})` : '')).join('; ');
+// The tithinityA: the tithi at sunrise and, if it ends within the 40 ghaTikAs, its end and the tithi
+// that follows, bracketed in turn, the last marked ➥, as the panchanga sankalpa writes its angas:
+// ॡं नित्या शु (०७:१६; एं नीलपताका शु ➥). (The Telegram ICS writes ॡं नित्या शु (०७:१६); एं नीलपताका शु.)
+export function tithiNityaText(A, a, T) {
+  const build = (i) => {
+    const { id, end } = a.tithis[i];
+    if (end != null && i + 1 < a.tithis.length) return `${A.nitya30[id - 1]} (${T(end)}; ${build(i + 1)})`;
+    return i ? `${A.nitya30[id - 1]} ➥` : A.nitya30[id - 1];
+  };
+  return build(0);
 }
 
 export function vidya(A, a) {

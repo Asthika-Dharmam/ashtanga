@@ -12,7 +12,8 @@ for its few cities, into data/ here, cut down to the fields it uses, and the app
   --cities  Chennai,Kanchipuram,Mumbai,NewDelhi (ids as in the panchaanga's index.json)
 
 Writes:
-  data/index.json                the cities, their Kali years, the scripts and the build
+  data/index.json                the cities, their Kali years, the scripts, the build, and the
+                                 festival groups of the panchanga festivals
   data/c/<city>/<kali>.json      one Kali year of days for a city, the fields the app uses
   data/s/<script>.json           names in one script: the panchaanga's (tithi, nakshatra, ...,
                                  sankalpa), the festivals the days carry, and the Ashtanga tables
@@ -95,7 +96,7 @@ def is_ashtanga(key, repo):
   return repo in ASHTANGA_REPOS or key.startswith(NAVARATRA)
 
 
-def build_days(src, city, year, fest_repo, used):
+def build_days(src, city, year, fest_repo, used, groups):
   meta = load(os.path.join(src, 'c', city, str(year['kali']), 'meta.json'))
   days = []
   for ym in meta['months']:
@@ -115,6 +116,8 @@ def build_days(src, city, year, fest_repo, used):
           a.append(key)
         elif repo in PANCHANGA_REPOS or (not repo and GENERATED.search(key)):
           p.append(key)
+          for g in e.get('g', []):
+            groups.setdefault(key, set()).add(g)
         else:
           continue
         used.add(key)
@@ -184,16 +187,19 @@ def main():
   for sub in ('c', 's'):
     shutil.rmtree(os.path.join(out, sub), ignore_errors=True)
   used = set()
+  groups = {}
   for c in cities:
     for y in c['years']:
-      dump(build_days(src, c['id'], y, fest_repo, used), os.path.join(out, 'c', c['id'], f'{y["kali"]}.json'))
+      dump(build_days(src, c['id'], y, fest_repo, used, groups), os.path.join(out, 'c', c['id'], f'{y["kali"]}.json'))
   for script in index['scripts']:
     dump(build_script(src, script, used, hk), os.path.join(out, 's', script + '.json'))
   # Cities in the order asked for.
   cities.sort(key=lambda c: wanted.index(c['id']))
   dump({'schema': 1, 'scripts': index['scripts'],
         'cities': [{k: c[k] for k in ('id', 'label', 'name', 'lat', 'lon', 'tz', 'years')} for c in cities],
-        'build': index['build']}, os.path.join(out, 'index.json'), pretty=True)
+        'build': index['build'],
+        # The panchaanga's festival groups (EkAdazI-vrata, pradOSa-vrata, ...) of the festivals that have one.
+        'groups': {k: sorted(v) for k, v in sorted(groups.items())}}, os.path.join(out, 'index.json'), pretty=True)
   print(f'{len(cities)} cities, {len(index["scripts"])} scripts, {len(used)} festivals -> {out}')
 
 

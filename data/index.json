@@ -157,5 +157,1318 @@
   "date": "2026-11-20",
   "jyotisha_commit": "005b8106c67d0e173e24f2968fe2a5743cf8bdb7",
   "adyatithi_commit": "dae7bff210f2ab42c7bd4ee730c2d8ca49ce0321"
+ },
+ "groups": {
+  "(bhAdrapada)_mahAlaya_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "ASADha_(karkaTa)_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "ASADha_(karkaTa)_amAvAsyA_(alabhyam–puSyaH,_puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "Adi-zaGkara_mAnasika-sannyAsa-dinam": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "Adityahasta-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "Akhuratha-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "Azvayuja-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "Azvayuja-amAvAsyA_(alabhyam–svAtI)": [
+   "darza-zrAddha"
+  ],
+  "Ekadanta-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "SaSThI-vratam": [
+   "SaSThI-vrata"
+  ],
+  "SaSThIdEvI-SaSThI-vratam": [
+   "SaSThI-vrata"
+  ],
+  "aGgAraka-saGkrAntiH|dhanuH>makaraH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|kanyA>tulA": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|karkaTaH>siMhaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|kumbhaH>mInaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|mESaH>vRSabhaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|mInaH>mESaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|makaraH>kumbhaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|mithunam>karkaTaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|siMhaH>kanyA": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|siMhaH>karkaTaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|tulA>vRzcikaH": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|vRSabhaH>mithunam": [
+   "graha-saGkrAnti"
+  ],
+  "aGgAraka-saGkrAntiH|vRzcikaH>dhanuH": [
+   "graha-saGkrAnti"
+  ],
+  "bOdhAyana-kAtyAyana-(bhAdrapada)_mahAlaya_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "bOdhAyana-kAtyAyana-ASADha_(karkaTa)_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "bOdhAyana-kAtyAyana-Azvayuja-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "bOdhAyana-kAtyAyana-jyaiSTha-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "bOdhAyana-kAtyAyana-zrAvaNa-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "bhAdrapada-candra-darzanam": [
+   "candra-darzana"
+  ],
+  "bhAlacandra-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "bhRgurEvatI-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "bhaumAzvinI-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "bhaumavAra-zukla-pradOSa-vratam": [
+   "pradOSa-vrata"
+  ],
+  "budhAnurAdhA-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "budha-saGkrAntiH|dhanuH>makaraH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|kanyA>tulA": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|karkaTaH>mithunam": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|karkaTaH>siMhaH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|kumbhaH>mInaH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|kumbhaH>makaraH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|mESaH>vRSabhaH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|mInaH>mESaH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|makaraH>kumbhaH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|mithunam>karkaTaH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|siMhaH>kanyA": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|tulA>kanyA": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|tulA>vRzcikaH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|vRSabhaH>mithunam": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|vRzcikaH>dhanuH": [
+   "graha-saGkrAnti"
+  ],
+  "budha-saGkrAntiH|vRzcikaH>tulA": [
+   "graha-saGkrAnti"
+  ],
+  "candra-darzanam": [
+   "candra-darzana"
+  ],
+  "candra-grahaNam~(rAhumukhagrasta)": [
+   "candra-grahaNa"
+  ],
+  "dakSiNAyana-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "dhanUravi-saGkramaNa-SaDazIti-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "dvijapriya-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "gaNAdhipa-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "gajAnana-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "guru-saGkrAntiH|kanyA>siMhaH": [
+   "graha-saGkrAnti"
+  ],
+  "guru-saGkrAntiH|karkaTaH>mithunam": [
+   "graha-saGkrAnti"
+  ],
+  "guru-saGkrAntiH|karkaTaH>siMhaH": [
+   "graha-saGkrAnti"
+  ],
+  "guru-saGkrAntiH|mithunam>karkaTaH": [
+   "graha-saGkrAnti"
+  ],
+  "guru-saGkrAntiH|siMhaH>kanyA": [
+   "graha-saGkrAnti"
+  ],
+  "guru-saGkrAntiH|siMhaH>karkaTaH": [
+   "graha-saGkrAnti"
+  ],
+  "guru-saGkrAntiH|vRSabhaH>mithunam": [
+   "graha-saGkrAnti"
+  ],
+  "gurupuSya-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "hEramba-mahAgaNapati-mahAsaGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "jyaiSTha-amAvAsyA_(alabhyam–ArdrA)": [
+   "darza-zrAddha"
+  ],
+  "jyaiSTha-amAvAsyA_(alabhyam–punarvasuH,_puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "kAJcI_10_jagadguru_zrI~surEzvarEndra_sarasvatI_ArAdhanA#1899": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_10_jagadguru_zrI~surEzvarEndra_sarasvatI_ArAdhanA#1900": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_10_jagadguru_zrI~surEzvarEndra_sarasvatI_ArAdhanA#1901": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_11_jagadguru_zrI~zivAnanda_cidghanEndra_sarasvatI_ArAdhanA#1854": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_11_jagadguru_zrI~zivAnanda_cidghanEndra_sarasvatI_ArAdhanA#1855": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_11_jagadguru_zrI~zivAnanda_cidghanEndra_sarasvatI_ArAdhanA#1856": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_12_jagadguru_zrI~candrazEkharEndra_sarasvatI_ArAdhanA#1791": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_12_jagadguru_zrI~candrazEkharEndra_sarasvatI_ArAdhanA#1792": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_12_jagadguru_zrI~candrazEkharEndra_sarasvatI_ArAdhanA#1793": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_13_jagadguru_zrI~saccidghanEndra_sarasvatI_ArAdhanA#1754": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_13_jagadguru_zrI~saccidghanEndra_sarasvatI_ArAdhanA#1755": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_13_jagadguru_zrI~saccidghanEndra_sarasvatI_ArAdhanA#1756": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_14_jagadguru_zrI~vidyAghanEndra_sarasvatI_ArAdhanA#1709": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_14_jagadguru_zrI~vidyAghanEndra_sarasvatI_ArAdhanA#1710": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_14_jagadguru_zrI~vidyAghanEndra_sarasvatI_ArAdhanA#1711": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_15_jagadguru_zrI~gaGgAdharEndra_sarasvatI_ArAdhanA#1697": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_15_jagadguru_zrI~gaGgAdharEndra_sarasvatI_ArAdhanA#1699": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_16_jagadguru_zrI~ujjvala_zaGkarEndra_sarasvatI_ArAdhanA#1659": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_16_jagadguru_zrI~ujjvala_zaGkarEndra_sarasvatI_ArAdhanA#1660": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_16_jagadguru_zrI~ujjvala_zaGkarEndra_sarasvatI_ArAdhanA#1661": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_17_jagadguru_zrI~sadAzivEndra_sarasvatI_ArAdhanA#1651": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_17_jagadguru_zrI~sadAzivEndra_sarasvatI_ArAdhanA#1652": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_17_jagadguru_zrI~sadAzivEndra_sarasvatI_ArAdhanA#1653": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_18_jagadguru_zrI~yOgatilaka_surEndra_sarasvatI_ArAdhanA#1641": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_18_jagadguru_zrI~yOgatilaka_surEndra_sarasvatI_ArAdhanA#1642": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_18_jagadguru_zrI~yOgatilaka_surEndra_sarasvatI_ArAdhanA#1643": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_19_jagadguru_zrI~mArtaNDa_vidyAghanEndra_sarasvatI_ArAdhanA#1628": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_19_jagadguru_zrI~mArtaNDa_vidyAghanEndra_sarasvatI_ArAdhanA#1629": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_19_jagadguru_zrI~mArtaNDa_vidyAghanEndra_sarasvatI_ArAdhanA#1630": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_1_jagadguru_zrI~Adi-zaGkara_bhagavatpAda_ArAdhanA#2501": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_1_jagadguru_zrI~Adi-zaGkara_bhagavatpAda_ArAdhanA#2502": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_1_jagadguru_zrI~Adi-zaGkara_bhagavatpAda_ArAdhanA#2503": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_20_jagadguru_zrI~mUkazaGkarEndra_sarasvatI_ArAdhanA#1589": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_20_jagadguru_zrI~mUkazaGkarEndra_sarasvatI_ArAdhanA#1590": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_20_jagadguru_zrI~mUkazaGkarEndra_sarasvatI_ArAdhanA#1591": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_21_jagadguru_zrI~sArvabhaumaguruH_candracUDEndra_sarasvatI_ArAdhanA#1579": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_21_jagadguru_zrI~sArvabhaumaguruH_candracUDEndra_sarasvatI_ArAdhanA#1580": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_21_jagadguru_zrI~sArvabhaumaguruH_candracUDEndra_sarasvatI_ArAdhanA#1581": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_22_jagadguru_zrI~paripUrNabOdhEndra_sarasvatI_ArAdhanA#1545": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_22_jagadguru_zrI~paripUrNabOdhEndra_sarasvatI_ArAdhanA#1546": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_22_jagadguru_zrI~paripUrNabOdhEndra_sarasvatI_ArAdhanA#1547": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_23_jagadguru_zrI~saccitsukhEndra_sarasvatI_ArAdhanA#1514": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_23_jagadguru_zrI~saccitsukhEndra_sarasvatI_ArAdhanA#1515": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_23_jagadguru_zrI~saccitsukhEndra_sarasvatI_ArAdhanA#1516": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_24_jagadguru_zrI~citsukhEndra_sarasvatI_ArAdhanA#1499": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_24_jagadguru_zrI~citsukhEndra_sarasvatI_ArAdhanA#1500": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_24_jagadguru_zrI~citsukhEndra_sarasvatI_ArAdhanA#1501": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_25_jagadguru_zrI~saccidAnandaghanEndra_sarasvatI_ArAdhanA#1478": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_25_jagadguru_zrI~saccidAnandaghanEndra_sarasvatI_ArAdhanA#1479": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_25_jagadguru_zrI~saccidAnandaghanEndra_sarasvatI_ArAdhanA#1480": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_26_jagadguru_zrI~prajJAghanEndra_sarasvatI_ArAdhanA#1462": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_26_jagadguru_zrI~prajJAghanEndra_sarasvatI_ArAdhanA#1463": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_26_jagadguru_zrI~prajJAghanEndra_sarasvatI_ArAdhanA#1464": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_27_jagadguru_zrI~cidvilAsEndra_sarasvatI_ArAdhanA#1449": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_27_jagadguru_zrI~cidvilAsEndra_sarasvatI_ArAdhanA#1451": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_28_jagadguru_zrI~mahAdEvEndra_sarasvatI_1_ArAdhanA#1425": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_28_jagadguru_zrI~mahAdEvEndra_sarasvatI_1_ArAdhanA#1426": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_28_jagadguru_zrI~mahAdEvEndra_sarasvatI_1_ArAdhanA#1427": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_29_jagadguru_zrI~pUrNabOdhEndra_sarasvatI_ArAdhanA#1408": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_29_jagadguru_zrI~pUrNabOdhEndra_sarasvatI_ArAdhanA#1409": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_29_jagadguru_zrI~pUrNabOdhEndra_sarasvatI_ArAdhanA#1410": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_2_jagadguru_zrI~surEzvarAcArya_ArAdhanA#2431": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_2_jagadguru_zrI~surEzvarAcArya_ArAdhanA#2432": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_2_jagadguru_zrI~surEzvarAcArya_ArAdhanA#2433": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_30_jagadguru_zrI~bOdhEndra_sarasvatI_2_ArAdhanA#1371": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_30_jagadguru_zrI~bOdhEndra_sarasvatI_2_ArAdhanA#1372": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_30_jagadguru_zrI~bOdhEndra_sarasvatI_2_ArAdhanA#1373": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_31_jagadguru_zrI~brahmAnandaghanEndra_sarasvatI_ArAdhanA#1358": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_31_jagadguru_zrI~brahmAnandaghanEndra_sarasvatI_ArAdhanA#1359": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_31_jagadguru_zrI~brahmAnandaghanEndra_sarasvatI_ArAdhanA#1360": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_32_jagadguru_zrI~cidAnandaghanEndra_sarasvatI_ArAdhanA#1354": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_32_jagadguru_zrI~cidAnandaghanEndra_sarasvatI_ArAdhanA#1355": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_32_jagadguru_zrI~cidAnandaghanEndra_sarasvatI_ArAdhanA#1356": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_33_jagadguru_zrI~saccidAnandaghanEndra_sarasvatI_2_ArAdhanA#1334": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_33_jagadguru_zrI~saccidAnandaghanEndra_sarasvatI_2_ArAdhanA#1335": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_33_jagadguru_zrI~saccidAnandaghanEndra_sarasvatI_2_ArAdhanA#1336": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_34_jagadguru_zrI~candrazEkharEndra_sarasvatI_2_ArAdhanA#1316": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_34_jagadguru_zrI~candrazEkharEndra_sarasvatI_2_ArAdhanA#1317": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_34_jagadguru_zrI~candrazEkharEndra_sarasvatI_2_ArAdhanA#1318": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_35_jagadguru_zrI~citsukhEndra_sarasvatI_ArAdhanA#1289": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_35_jagadguru_zrI~citsukhEndra_sarasvatI_ArAdhanA#1290": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_35_jagadguru_zrI~citsukhEndra_sarasvatI_ArAdhanA#1291": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_36_jagadguru_zrI~citsukhAnandEndra_sarasvatI_ArAdhanA#1268": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_36_jagadguru_zrI~citsukhAnandEndra_sarasvatI_ArAdhanA#1269": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_36_jagadguru_zrI~citsukhAnandEndra_sarasvatI_ArAdhanA#1270": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_37_jagadguru_zrI~vidyAghanEndra_sarasvatI_3_ArAdhanA#1238": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_37_jagadguru_zrI~vidyAghanEndra_sarasvatI_3_ArAdhanA#1239": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_37_jagadguru_zrI~vidyAghanEndra_sarasvatI_3_ArAdhanA#1240": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_38_jagadguru_zrI~abhinavazaGkarEndra_sarasvatI_ArAdhanA#1186": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_38_jagadguru_zrI~abhinavazaGkarEndra_sarasvatI_ArAdhanA#1187": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_38_jagadguru_zrI~abhinavazaGkarEndra_sarasvatI_ArAdhanA#1188": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_39_jagadguru_zrI~saccidvilAsEndra_sarasvatI_ArAdhanA#1153": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_39_jagadguru_zrI~saccidvilAsEndra_sarasvatI_ArAdhanA#1154": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_39_jagadguru_zrI~saccidvilAsEndra_sarasvatI_ArAdhanA#1155": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_3_jagadguru_zrI~sarvajJAtmEndra_sarasvatI_ArAdhanA#2389": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_3_jagadguru_zrI~sarvajJAtmEndra_sarasvatI_ArAdhanA#2390": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_3_jagadguru_zrI~sarvajJAtmEndra_sarasvatI_ArAdhanA#2391": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_40_jagadguru_zrI~mahAdEvEndra_sarasvatI_2_ArAdhanA#1111": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_40_jagadguru_zrI~mahAdEvEndra_sarasvatI_2_ArAdhanA#1112": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_40_jagadguru_zrI~mahAdEvEndra_sarasvatI_2_ArAdhanA#1113": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_41_jagadguru_zrI~gaGgAdharEndra_sarasvatI_2_ArAdhanA#1076": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_41_jagadguru_zrI~gaGgAdharEndra_sarasvatI_2_ArAdhanA#1077": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_41_jagadguru_zrI~gaGgAdharEndra_sarasvatI_2_ArAdhanA#1078": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_42_jagadguru_zrI~brahmAnandaghanEndra_sarasvatI_2_ArAdhanA#1048": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_42_jagadguru_zrI~brahmAnandaghanEndra_sarasvatI_2_ArAdhanA#1049": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_42_jagadguru_zrI~brahmAnandaghanEndra_sarasvatI_2_ArAdhanA#1050": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_43_jagadguru_zrI~AnandaghanEndra_sarasvatI_ArAdhanA#1013": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_43_jagadguru_zrI~AnandaghanEndra_sarasvatI_ArAdhanA#1014": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_43_jagadguru_zrI~AnandaghanEndra_sarasvatI_ArAdhanA#1015": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_44_jagadguru_zrI~pUrNabOdhEndra_sarasvatI_2_ArAdhanA#986": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_44_jagadguru_zrI~pUrNabOdhEndra_sarasvatI_2_ArAdhanA#987": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_44_jagadguru_zrI~pUrNabOdhEndra_sarasvatI_2_ArAdhanA#988": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_45_jagadguru_zrI~paramazivEndra_sarasvatI_1_ArAdhanA#965": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_45_jagadguru_zrI~paramazivEndra_sarasvatI_1_ArAdhanA#966": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_45_jagadguru_zrI~paramazivEndra_sarasvatI_1_ArAdhanA#967": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_46_jagadguru_zrI~sAndrAnandabOdhEndra_sarasvatI_ArAdhanA#928": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_46_jagadguru_zrI~sAndrAnandabOdhEndra_sarasvatI_ArAdhanA#929": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_46_jagadguru_zrI~sAndrAnandabOdhEndra_sarasvatI_ArAdhanA#930": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_47_jagadguru_zrI~candrazEkharEndra_sarasvatI_3_ArAdhanA#860": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_47_jagadguru_zrI~candrazEkharEndra_sarasvatI_3_ArAdhanA#861": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_47_jagadguru_zrI~candrazEkharEndra_sarasvatI_3_ArAdhanA#862": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_48_jagadguru_zrI~advaitAnandabOdhEndra_sarasvatI_ArAdhanA#826": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_48_jagadguru_zrI~advaitAnandabOdhEndra_sarasvatI_ArAdhanA#827": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_48_jagadguru_zrI~advaitAnandabOdhEndra_sarasvatI_ArAdhanA#828": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_49_jagadguru_zrI~mahAdEvEndra_sarasvatI_3_ArAdhanA#779": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_49_jagadguru_zrI~mahAdEvEndra_sarasvatI_3_ArAdhanA#780": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_49_jagadguru_zrI~mahAdEvEndra_sarasvatI_3_ArAdhanA#781": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_4_jagadguru_zrI~satyabOdhEndra_sarasvatI_ArAdhanA#2293": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_4_jagadguru_zrI~satyabOdhEndra_sarasvatI_ArAdhanA#2294": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_4_jagadguru_zrI~satyabOdhEndra_sarasvatI_ArAdhanA#2295": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_50_jagadguru_zrI~candracUDEndra_sarasvatI_2_ArAdhanA#729": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_50_jagadguru_zrI~candracUDEndra_sarasvatI_2_ArAdhanA#730": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_50_jagadguru_zrI~candracUDEndra_sarasvatI_2_ArAdhanA#731": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_51_jagadguru_zrI~vidyAtIrthEndra_sarasvatI_ArAdhanA#641": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_51_jagadguru_zrI~vidyAtIrthEndra_sarasvatI_ArAdhanA#642": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_51_jagadguru_zrI~vidyAtIrthEndra_sarasvatI_ArAdhanA#643": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_52_jagadguru_zrI~zaGkarAnandEndra_sarasvatI_ArAdhanA#609": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_52_jagadguru_zrI~zaGkarAnandEndra_sarasvatI_ArAdhanA#611": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_53_jagadguru_zrI~pUrNAnanda_sadAzivEndra_sarasvatI_ArAdhanA#528": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_53_jagadguru_zrI~pUrNAnanda_sadAzivEndra_sarasvatI_ArAdhanA#529": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_53_jagadguru_zrI~pUrNAnanda_sadAzivEndra_sarasvatI_ArAdhanA#530": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_54_jagadguru_zrI~vyAsAcala_mahAdEvEndra_sarasvatI_ArAdhanA#519": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_54_jagadguru_zrI~vyAsAcala_mahAdEvEndra_sarasvatI_ArAdhanA#520": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_54_jagadguru_zrI~vyAsAcala_mahAdEvEndra_sarasvatI_ArAdhanA#521": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_55_jagadguru_zrI~candracUDEndra_sarasvatI_3_ArAdhanA#502": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_55_jagadguru_zrI~candracUDEndra_sarasvatI_3_ArAdhanA#503": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_55_jagadguru_zrI~candracUDEndra_sarasvatI_3_ArAdhanA#504": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_56_jagadguru_zrI~sarvajJa_sadAziva_bOdhEndra_sarasvatI_ArAdhanA#487": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_56_jagadguru_zrI~sarvajJa_sadAziva_bOdhEndra_sarasvatI_ArAdhanA#488": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_56_jagadguru_zrI~sarvajJa_sadAziva_bOdhEndra_sarasvatI_ArAdhanA#489": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_57_jagadguru_zrI~paramazivEndra_sarasvatI_2_ArAdhanA#440": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_57_jagadguru_zrI~paramazivEndra_sarasvatI_2_ArAdhanA#441": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_57_jagadguru_zrI~paramazivEndra_sarasvatI_2_ArAdhanA#442": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_58_jagadguru_zrI~AtmabOdhEndra_sarasvatI_ArAdhanA#388": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_58_jagadguru_zrI~AtmabOdhEndra_sarasvatI_ArAdhanA#389": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_58_jagadguru_zrI~AtmabOdhEndra_sarasvatI_ArAdhanA#390": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_59_jagadguru_zrI~bhagavannAma_bOdhEndra_sarasvatI_ArAdhanA#334": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_59_jagadguru_zrI~bhagavannAma_bOdhEndra_sarasvatI_ArAdhanA#335": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_59_jagadguru_zrI~bhagavannAma_bOdhEndra_sarasvatI_ArAdhanA#336": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_5_jagadguru_zrI~jJAnAnandEndra_sarasvatI_ArAdhanA#2230": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_5_jagadguru_zrI~jJAnAnandEndra_sarasvatI_ArAdhanA#2231": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_5_jagadguru_zrI~jJAnAnandEndra_sarasvatI_ArAdhanA#2232": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_60_jagadguru_zrI~advaitAtmaprakAzEndra_sarasvatI_ArAdhanA#323": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_60_jagadguru_zrI~advaitAtmaprakAzEndra_sarasvatI_ArAdhanA#324": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_60_jagadguru_zrI~advaitAtmaprakAzEndra_sarasvatI_ArAdhanA#325": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_61_jagadguru_zrI~mahAdEvEndra_sarasvatI_4_ArAdhanA#280": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_61_jagadguru_zrI~mahAdEvEndra_sarasvatI_4_ArAdhanA#281": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_61_jagadguru_zrI~mahAdEvEndra_sarasvatI_4_ArAdhanA#282": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_62_jagadguru_zrI~candrazEkharEndra_sarasvatI_4_ArAdhanA#243": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_62_jagadguru_zrI~candrazEkharEndra_sarasvatI_4_ArAdhanA#244": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_62_jagadguru_zrI~candrazEkharEndra_sarasvatI_4_ArAdhanA#245": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_63_jagadguru_zrI~mahAdEvEndra_sarasvatI_5_ArAdhanA#212": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_63_jagadguru_zrI~mahAdEvEndra_sarasvatI_5_ArAdhanA#213": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_63_jagadguru_zrI~mahAdEvEndra_sarasvatI_5_ArAdhanA#214": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_64_jagadguru_zrI~candrazEkharEndra_sarasvatI_5_ArAdhanA#175": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_64_jagadguru_zrI~candrazEkharEndra_sarasvatI_5_ArAdhanA#176": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_64_jagadguru_zrI~candrazEkharEndra_sarasvatI_5_ArAdhanA#177": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_65_jagadguru_zrI~sudarzana_mahAdEvEndra_sarasvatI_ArAdhanA#136": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_65_jagadguru_zrI~sudarzana_mahAdEvEndra_sarasvatI_ArAdhanA#137": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_65_jagadguru_zrI~sudarzana_mahAdEvEndra_sarasvatI_ArAdhanA#138": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_66_jagadguru_zrI~candrazEkharEndra_sarasvatI_6_ArAdhanA#119": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_66_jagadguru_zrI~candrazEkharEndra_sarasvatI_6_ArAdhanA#120": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_66_jagadguru_zrI~candrazEkharEndra_sarasvatI_6_ArAdhanA#121": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_67_jagadguru_zrI~mahAdEvEndra_sarasvatI_5_ArAdhanA#119": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_67_jagadguru_zrI~mahAdEvEndra_sarasvatI_5_ArAdhanA#120": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_67_jagadguru_zrI~mahAdEvEndra_sarasvatI_5_ArAdhanA#121": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_ArAdhanA#32": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_ArAdhanA#33": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_ArAdhanA#34": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_Azrama-svIkAra-dinam#119": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_Azrama-svIkAra-dinam#120": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_Azrama-svIkAra-dinam#121": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_jayantI#132": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_jayantI#133": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_68_jagadguru_zrI~candrazEkharEndra_sarasvatI_7_jayantI#134": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_ArAdhanA#10": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_ArAdhanA#8": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_ArAdhanA#9": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_Azrama-svIkAra-dinam#73": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_Azrama-svIkAra-dinam#74": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_Azrama-svIkAra-dinam#75": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_jayantI#91": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_jayantI#92": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_69_jagadguru_zrI~jayEndra_sarasvatI_jayantI#93": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_6_jagadguru_zrI~zuddhAnandEndra_sarasvatI_ArAdhanA#2149": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_6_jagadguru_zrI~zuddhAnandEndra_sarasvatI_ArAdhanA#2150": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_6_jagadguru_zrI~zuddhAnandEndra_sarasvatI_ArAdhanA#2151": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_70_jagadguru_zrI~zaGkara_vijayEndra_sarasvatI_Azrama-svIkAra-dinam#43": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_70_jagadguru_zrI~zaGkara_vijayEndra_sarasvatI_Azrama-svIkAra-dinam#44": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_70_jagadguru_zrI~zaGkara_vijayEndra_sarasvatI_Azrama-svIkAra-dinam#45": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_70_jagadguru_zrI~zaGkara_vijayEndra_sarasvatI_jayantI#58": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_70_jagadguru_zrI~zaGkara_vijayEndra_sarasvatI_jayantI#59": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_70_jagadguru_zrI~zaGkara_vijayEndra_sarasvatI_jayantI#60": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_71_jagadguru_zrI~satya_candrazEkharEndra_sarasvatI_Azrama-svIkAra-dinam#1": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_71_jagadguru_zrI~satya_candrazEkharEndra_sarasvatI_Azrama-svIkAra-dinam#2": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_71_jagadguru_zrI~satya_candrazEkharEndra_sarasvatI_Azrama-svIkAra-dinam#3": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_71_jagadguru_zri~satya_candrazEkharEndra_sarasvatI_jayantI#26": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_71_jagadguru_zri~satya_candrazEkharEndra_sarasvatI_jayantI#27": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_71_jagadguru_zri~satya_candrazEkharEndra_sarasvatI_jayantI#28": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_7_jagadguru_zrI~AnandajJAnEndra_sarasvatI_ArAdhanA#2080": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_7_jagadguru_zrI~AnandajJAnEndra_sarasvatI_ArAdhanA#2081": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_7_jagadguru_zrI~AnandajJAnEndra_sarasvatI_ArAdhanA#2082": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_8_jagadguru_zrI~kaivalyAnandayOgEndra_sarasvatI_ArAdhanA#1997": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_8_jagadguru_zrI~kaivalyAnandayOgEndra_sarasvatI_ArAdhanA#1998": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_8_jagadguru_zrI~kaivalyAnandayOgEndra_sarasvatI_ArAdhanA#1999": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_9_jagadguru_zrI~kRpAzaGkarEndra_sarasvatI_ArAdhanA#1957": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_9_jagadguru_zrI~kRpAzaGkarEndra_sarasvatI_ArAdhanA#1958": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kAJcI_9_jagadguru_zrI~kRpAzaGkarEndra_sarasvatI_ArAdhanA#1959": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "kRSNapiGgala-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "kaizika-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "kanyA-ravi-saGkramaNa-SaDazIti-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "karkaTa-saGkramaNa-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "kumAra-SaSThI-vratam": [
+   "SaSThI-vrata"
+  ],
+  "kumbha-ravi-saGkramaNa-viSNupadI-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "lambOdara-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "mAgha-amAvAsyA_(alabhyam–mAgha-zatabhiSak)": [
+   "darza-zrAddha"
+  ],
+  "mAgha-amAvAsyA_(alabhyam–mAgha-zraviSThA,_puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "mAsazivarAtriH": [
+   "zivarAtri"
+  ],
+  "mESa-saGkramaNa-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "mIna-ravi-saGkramaNa-SaDazIti-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "mahAzivarAtriH": [
+   "zivarAtri"
+  ],
+  "makara-saGkramaNa-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "mithuna-ravi-saGkramaNa-SaDazIti-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "phAlguna-amAvAsyA_(alabhyam–pUrvaprOSThapadA)": [
+   "darza-zrAddha"
+  ],
+  "phAlguna-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "pradOSa-vratam": [
+   "pradOSa-vrata"
+  ],
+  "rAhu-saGkrAntiH|kumbhaH>makaraH": [
+   "graha-saGkrAnti"
+  ],
+  "rAhu-saGkrAntiH|mInaH>kumbhaH": [
+   "graha-saGkrAnti"
+  ],
+  "ravivAra-mahAzivarAtriH": [
+   "zivarAtri"
+  ],
+  "ravivAra-zukla-pradOSa-vratam": [
+   "pradOSa-vrata"
+  ],
+  "sAyana-SaDazIti-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "sAyana-viSNupadI-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "sOma-pradOSa-vratam": [
+   "pradOSa-vrata"
+  ],
+  "sOmamRgazIrSa-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "sOmavatI_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sOmazravaNa-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "sarva-(bhAdrapada)_mahAlaya_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-ASADha_(karkaTa)_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-ASADha_(karkaTa)_amAvAsyA_(alabhyam–punarvasuH,_puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-AmalakI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-Azvayuja-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-Azvayuja-amAvAsyA_(alabhyam–svAtI)": [
+   "darza-zrAddha"
+  ],
+  "sarva-SaTtilA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-adhika-jyaiSTha-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-ajA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-aparA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-bhaimI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-caitra-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-caitra-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-indirA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-jyaiSTha-amAvAsyA_(alabhyam–ArdrA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-kAmadA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-kAmikA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-kArttika-amAvAsyA_(alabhyam–anUrAdhA,_puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-kArttika-amAvAsyA_(alabhyam–vizAkhA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-mAgha-amAvAsyA_(alabhyam–mAgha-zatabhiSak)": [
+   "darza-zrAddha"
+  ],
+  "sarva-mAgha-amAvAsyA_(alabhyam–mAgha-zraviSThA,_puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-mArgazIrSa-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-mArgazIrSa-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-mOhinI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-mOkSadA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-mauni_(pauSa__makara)_amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-pANDava-nirjalA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-pApAGkuzA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-pApamOcanI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-padminI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-paramA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-parivartinI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-pauSa-putradA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-phAlguna-amAvAsyA_(alabhyam–pUrvaprOSThapadA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-phAlguna-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-ramA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-saphalA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-utpannA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-utthAna-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-vaikuNTha-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-vaizAkha-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-vaizAkha-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-varUthinI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-vijayA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-yOginI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-zayana-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "sarva-zrAvaNa-amAvAsyA": [
+   "darza-zrAddha"
+  ],
+  "sarva-zrAvaNa-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "sarva-zravaNa-putradA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "siMha-ravi-saGkramaNa-viSNupadI-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "skandaSaSThI-vratam": [
+   "SaSThI-vrata"
+  ],
+  "smArta-bhaimI-EkAdazI_(gRhastha)": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-bhaimI-EkAdazI_(sannyasta)": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-kAmadA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-kAmikA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-pANDava-nirjalA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-pauSa-putradA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-pauSa-putradA-EkAdazI_(gRhastha)": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-pauSa-putradA-EkAdazI_(sannyasta)": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-ramA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-utthAna-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-utthAna-EkAdazI_(gRhastha)": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-utthAna-EkAdazI_(sannyasta)": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-vaikuNTha-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-vijayA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-yOginI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "smArta-zravaNa-putradA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "subrahmaNya-SaSThI-vratam": [
+   "SaSThI-vrata"
+  ],
+  "tulA-saGkramaNa-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "uttarAyaNa-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "vRSabha-ravi-saGkramaNa-viSNupadI-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "vRzcika-ravi-saGkramaNa-viSNupadI-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "vaiSNava-bhaimI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-kAmadA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-kAmikA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-pANDava-nirjalA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-pauSa-putradA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-ramA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-utthAna-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-vaikuNTha-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-vijayA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-yOginI-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vaiSNava-zravaNa-putradA-EkAdazI": [
+   "EkAdazI-vrata"
+  ],
+  "vakratuNDa-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "viSu-puNyakAlaH": [
+   "saGkramaNa"
+  ],
+  "vibhuvana-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "vighnarAja-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "vikaTa-mahAgaNapati-saGkaTahara-caturthI-vratam": [
+   "saGkaTahara-caturthI-vrata"
+  ],
+  "zaGkarabhagavatpAdasya-kailAsAt-punarAgamanam": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "zaGkara~jayantI#2534": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "zaGkara~jayantI#2535": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "zaGkara~jayantI#2536": [
+   "kAJcI-jagadgurUNAM ArAdhanA/jayantI"
+  ],
+  "zani-pradOSa-vratam": [
+   "pradOSa-vrata"
+  ],
+  "zani-saGkrAntiH|mESaH>mInaH": [
+   "graha-saGkrAnti"
+  ],
+  "zani-saGkrAntiH|mInaH>mESaH": [
+   "graha-saGkrAnti"
+  ],
+  "zanirOhiNI-yOgaH": [
+   "amRta-siddhi-yOga"
+  ],
+  "zanivAra-zukla-pradOSa-vratam": [
+   "pradOSa-vrata"
+  ],
+  "zrAvaNa-amAvAsyA_(alabhyam–puSkalA)": [
+   "darza-zrAddha"
+  ],
+  "zukra-saGkrAntiH|dhanuH>makaraH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|kanyA>tulA": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|karkaTaH>siMhaH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|kumbhaH>mInaH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|mESaH>vRSabhaH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|mInaH>mESaH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|makaraH>kumbhaH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|mithunam>karkaTaH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|siMhaH>kanyA": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|tulA>kanyA": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|tulA>vRzcikaH": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|vRSabhaH>mithunam": [
+   "graha-saGkrAnti"
+  ],
+  "zukra-saGkrAntiH|vRzcikaH>dhanuH": [
+   "graha-saGkrAnti"
+  ],
+  "zukravAra-zukla-pradOSa-vratam": [
+   "pradOSa-vrata"
+  ]
  }
 }

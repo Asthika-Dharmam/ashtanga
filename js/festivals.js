@@ -46,7 +46,8 @@ export function festivalsOf(ctx, day, a = computeAshtanga(day)) {
   if (day.saura.d === 1) ashtanga.push({ key: 'sankramana', kind: 'parva', name: A.phrases.sankramana });
   for (const key of day.fa || []) ashtanga.push({ key, kind: kindOf(key), name: F[key] || key, puja: pujaTimes(ctx, day, key) });
   for (const v of a.visesha) ashtanga.push({ key: v, kind: 'visesha', name: A.visesha[v][0] });
-  const panchanga = (day.fp || []).map((key) => ({ key, kind: 'p', name: F[key] || key }));
+  const groups = ctx.index.groups || {};
+  const panchanga = (day.fp || []).map((key) => ({ key, kind: 'p', name: F[key] || key, groups: groups[key] || [] }));
   return { ashtanga, panchanga };
 }
 

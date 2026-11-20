@@ -15,7 +15,7 @@ Kannada, Roman (ISO).
 | Panchanga | The samvatsara, ayana, ṛtu, solar and lunar months; sunrise, sunset, moonrise and moonset; the five aṅgas, each with when it ends and what follows (the one running now marked); rāhu kālam, yamagaṇḍam, gulika, durmuhūrtam and varjyam; abhijit and amṛta kālam; the moon's rāśi and the śūlam; the day's festivals. |
 | Ashtanga | The dinanityāvidyā, large; the tithinityā (with the times the tithis change), dinanityā, kālanityā, tattvadivasa, vāsara, the nakṣatra, yoga and karaṇa letters and the ghaṭikodaya; the tattvavatsara, ṛtu, nityāmāsa and kalāmāsa, and the larger cycles; the viśeṣa puṇyakālas and devī parvas of the day, with their pūjā times (rātri-pūjā for the devī-parvas: pradoṣa and madhyarātri; for each mahāvidyā jayantī the kāla of the Ashtangam's table) and the navāvaraṇa-pūjā days marked; the next seven days. |
 | Sankalpa | The Śākta Aṣṭāṅga sankalpa (as the Telegram bot [t.me/ashtangam](https://t.me/ashtangam) and the Ashtangam print it), the pañcāṅga sankalpa, or both combined (pañcāṅga, then aṣṭāṅga, then the dinanityāvidyā, as in the daily ICS). As printed, from sunrise, with each change and its time in brackets; in Devanagari, with Devanagari digits. Large type, A−/A+, copy and share; the copied text is set for WhatsApp (its *bold*, one phrase to a line). |
-| Festivals | The Kali year's festivals by month, opening at today: the Ashtanga ones (devī parvas, pañca-parva pūjās including the saṅkramaṇa, the daśa-mahāvidyā jayantīs, the navarātras, the viśeṣa puṇyakālas), or the panchanga ones, with search. |
+| Festivals | The Kali year's festivals by month, opening at today, with the months already past folded: the Ashtanga ones (devī parvas, pañca-parva pūjās including the saṅkramaṇa, the daśa-mahāvidyā jayantīs, the navarātras, the viśeṣa puṇyakālas), or the panchanga ones, with search. Each list can be narrowed to a class: the Ashtanga's by kind; the Panchanga's by the panchaanga's festival groups (Ekādaśī, Pradoṣa, Kāñcī Jagadgurus' ārādhanā/jayantī, Śivarātri, Saṅkaṭahara caturthī, Ṣaṣṭhī, amāvāsyā, saṅkramaṇa, amṛta-siddhi yoga …), each with its count. |
 | About | Asthika Dharmam; the Ashtangam, with a page "What is the Ashtangam?" (Śrī Kāñcī Mahāsvāmī's direction of 1973, in English and Tamil); ordering the panchangam; the WhatsApp, Telegram and YouTube channels; settings (city, script, theme, clock, text size); acknowledgements; the data. |
 
 Each day has an address: `#ashtanga/2026-11-20`. Swipe or use the arrow keys to change the day.
@@ -51,7 +51,9 @@ Ashtangam PDF's tables and the calculation sheet; a few spellings differ from th
 ICS (अं आं श्रीकरी for अम् आं, घ्राणम्, ओं सर्वमङ्गला).
 
 **Checked against the Telegram ICS:** every day of 2026 for Chennai (Madrapurī) agrees with
-`Madrapuri-2026-devanagari-daily-ashtanga-sankalpa.ics`, apart from those spellings:
+`Madrapuri-2026-devanagari-daily-ashtanga-sankalpa.ics`, apart from those spellings and the
+tithinityā's form (the ICS writes ॡं नित्या शु (०७:१६); एं नीलपताका शु, this app
+ॡं नित्या शु (०७:१६; एं नीलपताका शु ➥), as the pañcāṅga sankalpa writes its aṅgas):
 
 ```bash
 python3 tools/ics2json.py Madrapuri-2026-devanagari-daily-ashtanga-sankalpa.ics /tmp/ics.json
