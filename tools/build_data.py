@@ -140,6 +140,8 @@ def build_script(src, script, used, hk):
   out['fest'] = {k: names.get(k, k) for k in sorted(used)}
   # The kAlas: of the pUjA times on parva days, and the five of the day and the dinAnta.
   out['kaala'] = {k: static['kaala'][k] for k in ('pradosha', 'madhyaraatri', 'praatah', 'saangava', 'madhyaahna', 'aparaahna', 'saayaahna', 'dinaanta') if k in static.get('kaala', {})}
+  # dinAntaH, as the Ashtanga generators name it (the panchaanga's table has dinAntam).
+  out['kaala']['dinaanta'] = tr('dinAntaH', script)
   T = lambda s: tr(s, script)
   N = lambda s: tr(s, script, names=True)
   a = {k: [N(x) for x in hk[k]] for k in ('tattva', 'rtu', 'nityamasa', 'kalamasa', 'nitya30',
