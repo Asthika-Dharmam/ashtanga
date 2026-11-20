@@ -76,19 +76,11 @@ button { font: inherit; color: inherit; }
 .picks { display: flex; gap: .35rem; min-width: 0; align-items: center; }
 .gear { flex: none; display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 50%; color: inherit; background: var(--band-2); }
 .gear:hover { filter: brightness(1.15); }
-.script-pick { padding: .2rem .45rem; }
-.script-pick select { max-width: 3.2rem; font-family: var(--indic); font-size: 1.05rem; }
 .picks { flex: 0 1 auto; }
 .city { min-width: 0; }
 .city select { min-width: 0; }
-/* On a phone: the logo without the name, and the city without its pin, so the gear fits. */
-@media (max-width: 440px) {
-  .brand span { display: none; }
-  .bar { gap: .3rem; }
-  .city:not(.script-pick) > .ico { display: none; }
-  .city { padding-left: .7rem; }
-  .city select { max-width: 8.5rem; }
-}
+/* On a narrow phone: the name without its subtitle. */
+@media (max-width: 380px) { .brand small { display: none; } .bar { gap: .3rem; } .city select { max-width: 7rem; } }
 .datebar { padding: .1rem 0 .6rem; }
 .datebar .nav { flex: none; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 0; background: transparent; color: inherit; display: grid; place-items: center; cursor: pointer; }
 .datebar .nav:disabled { opacity: .3; }
