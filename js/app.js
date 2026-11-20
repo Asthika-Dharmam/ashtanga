@@ -92,8 +92,7 @@ async function render() {
   }
   if (seq !== renderSeq) return;
   main.replaceChildren(view);
-  main.scrollTop = 0;
-  window.scrollTo(0, 0);
+  view.scrollTop = 0;
   document.title = `${spec.label} · Ashtanga`;
   data.prefetch(city, script);
 }

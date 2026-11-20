@@ -52,7 +52,9 @@
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; font-size: calc(100% * var(--text-scale)); }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.5 var(--sans); min-height: 100dvh; }
+/* The page is a column the height of the screen: the header and the tab bar stay, and the view
+   between them scrolls; a view with a .pane-top keeps that too, and only its .pane-scroll moves. */
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.5 var(--sans); height: 100vh; height: 100dvh; overflow: hidden; display: flex; flex-direction: column; }
 [lang="sa"], .sankalpa, .vidya { font-family: var(--indic); }
 a { color: var(--accent); }
 button { font: inherit; color: inherit; }
@@ -61,7 +63,7 @@ button { font: inherit; color: inherit; }
 .ico { display: inline-flex; line-height: 0; }
 
 /* Header: the band with the brand and city, then the day. */
-.top { position: sticky; top: 0; z-index: 5; background: var(--band); color: var(--band-ink); padding: env(safe-area-inset-top, 0) var(--gutter) 0; }
+.top { flex: none; z-index: 5; background: var(--band); color: var(--band-ink); padding: env(safe-area-inset-top, 0) var(--gutter) 0; }
 .bar, .datebar { max-width: var(--col); margin: 0 auto; display: flex; align-items: center; gap: .5rem; }
 .bar { padding: .55rem 0 .35rem; justify-content: space-between; }
 .brand { display: flex; align-items: center; gap: .55rem; color: inherit; text-decoration: none; }
@@ -86,9 +88,19 @@ button { font: inherit; color: inherit; }
 .today-btn.on { background: var(--band-ink); color: var(--band); border-color: transparent; }
 
 /* Body column and the tab bar. */
-.main { max-width: var(--col); margin: 0 auto; padding: 1rem var(--gutter) calc(var(--tabs-h) + 1.5rem + env(safe-area-inset-bottom, 0)); }
-.view { display: flex; flex-direction: column; gap: .9rem; }
-.tabs { position: fixed; inset: auto 0 0 0; z-index: 5; display: flex; justify-content: center; background: var(--card); border-top: 1px solid var(--hair); padding-bottom: env(safe-area-inset-bottom, 0); }
+.main { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+/* Content in a centred column; the scroll bar at the screen's edge. */
+.view, .pane-scroll { --pad: max(var(--gutter), calc((100% - var(--col)) / 2)); padding-left: var(--pad); padding-right: var(--pad); }
+.view { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; display: flex; flex-direction: column; gap: .9rem; padding-top: 1rem; padding-bottom: 1.5rem; }
+.view > * { flex-shrink: 0; }
+.view.pane { overflow: hidden; padding: 0; gap: 0; }
+.pane-top { flex: none; display: flex; flex-direction: column; gap: .7rem; padding: .8rem var(--pad) .7rem; --pad: max(var(--gutter), calc((100% - var(--col)) / 2)); border-bottom: 1px solid var(--hair); }
+.pane-scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding-top: .9rem; padding-bottom: 1.5rem; }
+.pane-top .tools { margin: 0; }
+.more-link { display: flex; flex-direction: column; gap: .1rem; text-decoration: none; color: var(--ink); }
+.more-link b { color: var(--accent); }
+.more-link small { color: var(--ink-3); }
+.tabs { flex: none; z-index: 5; display: flex; justify-content: center; background: var(--card); border-top: 1px solid var(--hair); padding-bottom: env(safe-area-inset-bottom, 0); }
 .tab { flex: 1; max-width: 7.5rem; height: var(--tabs-h); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; color: var(--ink-3); text-decoration: none; font-size: .72rem; letter-spacing: .01em; }
 .tab.on { color: var(--accent); font-weight: 600; }
 .tab.on .ico { background: var(--accent-wash); border-radius: 999px; padding: .15rem .9rem; }

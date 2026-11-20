@@ -84,9 +84,13 @@ export async function renderFestivals(ctx, root) {
     }
     list.replaceChildren(...(out.length ? out : [h('p', { class: 'empty' }, 'Nothing here.')]));
     const next = list.querySelector('li.today, li:not(.past)');
+    list.parentElement && (list.parentElement.scrollTop = 0);
     if (next && next !== list.querySelector('li')) requestAnimationFrame(() => next.scrollIntoView({ block: 'center' }));
   }
 
-  root.append(h('div', { class: 'fest-head card' }, yearBar, segs, chips, search), list);
+  // The year, the choice and the classes stay in place; only the list scrolls.
+  root.classList.add('pane');
+  root.append(h('div', { class: 'pane-top' }, h('div', { class: 'fest-head card' }, yearBar, segs, chips, search)),
+    h('div', { class: 'pane-scroll' }, list));
   await draw();
 }

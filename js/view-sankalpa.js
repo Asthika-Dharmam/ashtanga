@@ -95,6 +95,10 @@ export async function renderSankalpa(ctx, root) {
     note);
 
   draw();
-  root.append(segs, h('div', { class: 'card sankalpa-card' },
-    h('p', { class: 'status' }, 'From sunrise, with each change and its time.'), tools, body));
+  // The choice and the tools stay in place; only the text scrolls.
+  root.classList.add('pane');
+  root.append(
+    h('div', { class: 'pane-top' }, segs, tools),
+    h('div', { class: 'pane-scroll' }, h('div', { class: 'card sankalpa-card' },
+      h('p', { class: 'status' }, 'From sunrise, with each change and its time.'), body)));
 }
