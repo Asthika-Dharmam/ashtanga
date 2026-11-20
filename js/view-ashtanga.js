@@ -79,5 +79,5 @@ export async function renderAshtanga(ctx, root) {
   const next = ahead.length ? h('section', { class: 'card ahead' }, h('h2', null, 'Coming days'), h('ul', null, ahead)) : null;
 
   root.append(hero, dayCard, cycles, next,
-    h('p', { class: 'foot' }, 'The Ashtanga is reckoned from the kalyahargaṇa, the count of days since the start of the Kali yuga, at sunrise; the tithinityā is the tithi itself, with the tithis that begin within 40 ghaṭikās of sunrise.'));
+    h('p', { class: 'foot' }, h('a', { href: '#ashtangam' }, 'What is the Ashtangam?'), ' The Ashtanga is reckoned from the kalyahargaṇa, the count of days since the start of the Kali yuga, at sunrise; the tithinityā is the tithi itself, with the tithis that begin within 40 ghaṭikās of sunrise.'));
 }

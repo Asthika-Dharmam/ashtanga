@@ -8,6 +8,7 @@ import { renderAshtanga } from './view-ashtanga.js';
 import { renderSankalpa } from './view-sankalpa.js';
 import { renderFestivals } from './view-festivals.js';
 import { renderAbout } from './view-about.js';
+import { renderAshtangam } from './view-ashtangam.js';
 import { ICONS } from './icons.js';
 
 // How each script shows in the header's picker: a letter of it (the full names are in Settings).
@@ -19,6 +20,8 @@ const TABS = [
   { id: 'sankalpa', label: 'Sankalpa', sa: 'saṅkalpaḥ', render: renderSankalpa, dated: true },
   { id: 'festivals', label: 'Festivals', sa: 'parvāṇi', render: renderFestivals, dated: false },
   { id: 'about', label: 'About', sa: 'paricayaḥ', render: renderAbout, dated: false },
+  // A page reached from About and the Ashtanga tab, not a tab of its own.
+  { id: 'ashtangam', label: 'What is the Ashtangam', render: renderAshtangam, dated: false, under: 'about' },
 ];
 
 const settings = Object.assign({ city: 'Chennai', script: 'devanagari', theme: 'auto', size: 1, twelve: false }, loadSettings());
@@ -79,7 +82,7 @@ async function render() {
   };
   const spec = TABS.find((t) => t.id === tab);
   drawHeader(ctx, spec);
-  drawTabs(tab);
+  drawTabs(spec.under || tab);
   const view = h('div', { class: `view view-${tab}` });
   try {
     await spec.render(ctx, view);
@@ -126,7 +129,7 @@ function drawHeader(ctx, spec) {
 }
 
 function drawTabs(current) {
-  tabbar.replaceChildren(...TABS.map((t) => h('a', {
+  tabbar.replaceChildren(...TABS.filter((t) => !t.under).map((t) => h('a', {
     href: `#${t.id}${t.dated && parseHash().date ? '/' + parseHash().date : ''}`,
     class: 'tab' + (t.id === current ? ' on' : ''),
     'aria-current': t.id === current ? 'page' : null,

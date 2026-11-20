@@ -55,8 +55,14 @@ export async function renderAbout(ctx, root) {
 
   const ashtangam = h('section', { class: 'card' },
     h('h2', null, 'The Śrī Devīmāna Aṣṭāṅgam'),
-    h('p', null, 'The Ashtanga here follows the Śrī Devīmāna Aṣṭāṅgam composed by Brahmaśrī Dinakara Śarmā, as printed each year for Kāñcīpuram, and the daily Śākta Aṣṭāṅga sankalpa sent on Telegram. Its tables of kalāmāsas, ṛtus, vāsaras, tattvadivasas, nityās and viśeṣa yogas are those of the printed edition.'),
+    h('p', null, 'The Ashtanga here follows the Śrī Devīmāna Aṣṭāṅgam prepared each year by Brahmaśrī Dinakara Śarmā at the direction of Śrī Kāñcī Mahāsvāmī, and the daily Śākta Aṣṭāṅga sankalpa sent on Telegram.'),
+    h('div', { class: 'actions' },
+      h('a', { class: 'action', href: '#ashtangam' }, svg(ICONS.ashtanga), h('span', null, h('b', null, 'What is the Ashtangam?'), h('small', null, 'Mahāperiyavā’s direction, 1973 · English, தமிழ்')), svg(ICONS.right, 'ico go'))),
     h('p', null, ext('https://bit.ly/ashtanga-errata', 'Errata for the printed Ashtangam'), ' · ', ext('https://asthikadharmam.org/corrections/', 'Panchangam corrections')));
+
+  const thanks = h('section', { class: 'card thanks' },
+    h('h2', null, 'Acknowledgements'),
+    h('p', null, 'We express our profound gratitude to our Guru Brahmashri Dinakara Sharma, who is one of the foremost Shrividyopasakas.'));
 
   const contact = h('section', { class: 'card' },
     h('h2', null, 'Contact'),
@@ -88,5 +94,5 @@ export async function renderAbout(ctx, root) {
     h('p', { class: 'muted' }, `Data built ${b.date || '—'} · jyotisha ${b.jyotisha || '—'} · adyatithi ${b.adyatithi || '—'}`),
     h('p', null, 'The full pañcāṅga, with every kāla, muhūrta and observance: ', ext('https://adyatithi.github.io/panchaanga/', 'Adyatithi Panchaanga'), '.'));
 
-  root.append(intro, order, channels, ashtangam, prefs, contact, dataNote);
+  root.append(intro, ashtangam, order, channels, prefs, contact, thanks, dataNote);
 }

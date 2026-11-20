@@ -251,3 +251,12 @@ details summary { cursor: pointer; color: var(--accent); font-size: .88rem; padd
 
 /* Tamil and Grantha run wide: a little smaller where the text is large. */
 :root[data-script="tamil"] .vidya, :root[data-script="grantha"] .vidya { font-size: 2.1rem; }
+
+/* What is the Ashtangam */
+.letter h2 { text-transform: none; letter-spacing: .01em; font-size: 1.2rem; color: var(--ink); justify-content: center; margin-bottom: .1rem; }
+.letter .letter-sub { text-align: center; color: var(--accent); font-weight: 600; margin-top: 0; }
+.letter p { line-height: 1.65; }
+.letter[lang="ta"] p { font-family: var(--indic); font-size: 1.02rem; }
+.letter .om { text-align: center; color: var(--gold); font-family: var(--indic); }
+.letter .sign { text-align: right; font-weight: 600; }
+.thanks p { font-size: 1.02rem; }
