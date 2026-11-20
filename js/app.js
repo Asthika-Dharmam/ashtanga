@@ -10,6 +10,9 @@ import { renderFestivals } from './view-festivals.js';
 import { renderAbout } from './view-about.js';
 import { ICONS } from './icons.js';
 
+// How each script shows in the header's picker: a letter of it (the full names are in Settings).
+const SCRIPT_MARK = { devanagari: 'अ', tamil: 'அ', grantha: '𑌅', telugu: 'అ', kannada: 'ಅ', iso: 'ā' };
+
 const TABS = [
   { id: 'panchanga', label: 'Panchanga', sa: 'pañcāṅgam', render: renderPanchanga, dated: true },
   { id: 'ashtanga', label: 'Ashtanga', sa: 'aṣṭāṅgam', render: renderAshtanga, dated: true },
@@ -94,6 +97,10 @@ async function render() {
 
 function drawHeader(ctx, spec) {
   const { city, index: ix, date, live, range } = ctx;
+  // The script, shown by a letter in it (अ, அ, …), next to the city.
+  const scriptPick = h('label', { class: 'city script-pick', title: 'Script' },
+    h('select', { 'aria-label': 'Script', onchange: (e) => save({ script: e.target.value }) },
+      ix.scripts.map((s) => h('option', { value: s, selected: s === ctx.script }, SCRIPT_MARK[s] || s))));
   const cityPick = h('label', { class: 'city' },
     svg(ICONS.pin),
     h('select', { 'aria-label': 'City', onchange: (e) => save({ city: e.target.value }) },
@@ -101,7 +108,7 @@ function drawHeader(ctx, spec) {
   const top = h('div', { class: 'bar' },
     h('a', { class: 'brand', href: '#panchanga' }, h('img', { src: 'icons/icon.svg', alt: '', width: 28, height: 28 }),
       h('span', null, h('b', null, 'Ashtanga'), h('small', null, 'Asthika Dharmam'))),
-    cityPick);
+    h('div', { class: 'picks' }, scriptPick, cityPick));
   const rows = [top];
   if (spec.dated) {
     const isLive = date === live.date;
