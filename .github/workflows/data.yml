@@ -1,0 +1,36 @@
+# Refreshes data/ from the Adyatithi panchaanga's published data (the adyatithi/panchaanga
+# repository's data/ folder) once a week, and commits it if anything changed. The app never reads
+# the panchaanga site itself.
+name: Data
+on:
+  schedule:
+    - cron: '17 2 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the panchaanga's data
+        uses: actions/checkout@v4
+        with:
+          repository: adyatithi/panchaanga
+          path: panchaanga
+          sparse-checkout: data
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install indic_transliteration
+      - run: python3 tools/build_data.py --src panchaanga/data
+      - name: Commit
+        run: |
+          rm -rf panchaanga
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data
+            git commit -m "Refresh data from the panchaanga ($(jq -r .build.date data/index.json))"
+            git push
+          fi

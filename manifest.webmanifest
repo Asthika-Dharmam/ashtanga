@@ -1,0 +1,15 @@
+{
+  "name": "Ashtanga · Asthika Dharmam",
+  "short_name": "Ashtanga",
+  "description": "The Shakta Ashtanga and the panchanga of the day, both sankalpas, and the year's festivals.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f1e7",
+  "theme_color": "#1f2163",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
