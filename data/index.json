@@ -151,11 +151,11 @@
   }
  ],
  "build": {
-  "jyotisha": "005b810",
+  "jyotisha": "0bd2314",
   "adyatithi": "dae7bff",
-  "adyatithi_panchaanga": "32a084a",
-  "date": "2026-11-20",
-  "jyotisha_commit": "005b8106c67d0e173e24f2968fe2a5743cf8bdb7",
+  "adyatithi_panchaanga": "c095251",
+  "date": "2026-11-22",
+  "jyotisha_commit": "0bd231417faa4781918dabaa20e3bb219eef4ac5",
   "adyatithi_commit": "dae7bff210f2ab42c7bd4ee730c2d8ca49ce0321"
  },
  "groups": {
