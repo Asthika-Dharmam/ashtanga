@@ -151,12 +151,12 @@
   }
  ],
  "build": {
-  "jyotisha": "0bd2314",
-  "adyatithi": "dae7bff",
-  "adyatithi_panchaanga": "c095251",
-  "date": "2026-11-22",
-  "jyotisha_commit": "0bd231417faa4781918dabaa20e3bb219eef4ac5",
-  "adyatithi_commit": "dae7bff210f2ab42c7bd4ee730c2d8ca49ce0321"
+  "jyotisha": "1e05e88",
+  "adyatithi": "a3860a9",
+  "adyatithi_panchaanga": "b60abfb",
+  "date": "2026-11-23",
+  "jyotisha_commit": "1e05e88cdc3a88a4fec88e7b53117ce181c28b93",
+  "adyatithi_commit": "a3860a98cdfe1bc00e50b247d4d6fdc1e33009e2"
  },
  "groups": {
   "(bhAdrapada)_mahAlaya_amAvAsyA": [
