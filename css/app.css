@@ -92,7 +92,7 @@ button { font: inherit; color: inherit; }
 .today-btn.on { background: var(--band-ink); color: var(--band); border-color: transparent; }
 
 /* Body column and the tab bar. */
-.main { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+.main { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; position: relative; }
 /* Content in a centred column; the scroll bar at the screen's edge. */
 .view, .pane-scroll { --pad: max(var(--gutter), calc((100% - var(--col)) / 2)); padding-left: var(--pad); padding-right: var(--pad); }
 .view { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; display: flex; flex-direction: column; gap: .9rem; padding-top: 1rem; padding-bottom: 1.5rem; }
@@ -292,3 +292,9 @@ details summary { cursor: pointer; color: var(--accent); font-size: .88rem; padd
 .segs.small .seg { padding: .35rem .5rem; font-size: .9rem; }
 .times-body ul { list-style: none; margin: 0; padding: 0; }
 #settings { scroll-margin-top: .9rem; }
+
+/* Pull to refresh */
+.ptr { position: absolute; top: -2.2rem; left: 50%; transform: translate(-50%, 0); width: 2.2rem; height: 2.2rem; border-radius: 50%; display: grid; place-items: center; background: var(--card); color: var(--ink-3); box-shadow: 0 2px 8px rgb(0 0 0 / .15); font-size: 1.3rem; opacity: 0; pointer-events: none; z-index: 4; }
+.ptr.ready { color: var(--accent); }
+.ptr.spin { animation: ptr-spin .7s linear infinite; opacity: 1; transform: translate(-50%, 70px); }
+@keyframes ptr-spin { to { transform: translate(-50%, 70px) rotate(360deg); } }

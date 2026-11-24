@@ -2,10 +2,14 @@
 // published data. Fetched once and kept in memory; the service worker keeps a copy for offline use.
 import { addDays } from './util.js';
 
+// index.json is always asked of the network first (sw.js); every other file is asked for under its
+// build (?b=…), so a new data build is fetched afresh and an old one is never served in its place.
 const cache = new Map();
+let build = '';
 function get(path) {
   if (!cache.has(path)) {
-    const p = fetch('data/' + path).then((r) => {
+    const url = 'data/' + path + (path !== 'index.json' && build ? `?b=${build}` : '');
+    const p = fetch(url, path === 'index.json' ? { cache: 'no-cache' } : undefined).then((r) => {
       if (!r.ok) throw new Error(`${path}: ${r.status}`);
       return r.json();
     });
@@ -15,7 +19,11 @@ function get(path) {
   return cache.get(path);
 }
 
-export const loadIndex = () => get('index.json');
+export const loadIndex = () => get('index.json').then((ix) => {
+  const b = ix.build || {};
+  build = [b.date, b.jyotisha, b.adyatithi, b.adyatithi_panchaanga].filter(Boolean).join('.');
+  return ix;
+});
 export const loadScript = (script) => get(`s/${script}.json`);
 
 // A Kali year of a city: {kali, samvatsara, start, end, days, byDate}.

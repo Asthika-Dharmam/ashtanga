@@ -88,7 +88,7 @@ async function render() {
     view.replaceChildren(h('p', { class: 'empty' }, 'This day could not be shown. ', h('button', { class: 'link', onclick: () => go({ date: null }) }, 'Go to today')));
   }
   if (seq !== renderSeq) return;
-  main.replaceChildren(view);
+  main.replaceChildren(view, ptr);
   view.scrollTop = 0;
   document.title = `${spec.label} · Ashtanga`;
   data.prefetch(city, script);
@@ -168,6 +168,39 @@ async function tick() {
 setInterval(tick, 60000);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) tick(); });
 
+// Pull to refresh. The page itself doesn't scroll (only the view under the header does), so the
+// browser's own gesture can't act; this does: pulled down from the top of the view, past a
+// threshold, the page reloads, fetching the data index afresh.
+const ptr = h('div', { class: 'ptr', 'aria-hidden': 'true' }, '↻');
+main.append(ptr);
+let pull = null;
+main.addEventListener('touchstart', (e) => {
+  const sc = e.target.closest('.pane-scroll, .view');
+  pull = e.touches.length === 1 && sc && sc.scrollTop <= 0 && !e.target.closest('input, select, textarea')
+    ? { y: e.touches[0].clientY, x: e.touches[0].clientX, sc, dy: 0 } : null;
+}, { passive: true });
+main.addEventListener('touchmove', (e) => {
+  if (!pull) return;
+  const dy = e.touches[0].clientY - pull.y;
+  const dx = Math.abs(e.touches[0].clientX - pull.x);
+  if (pull.sc.scrollTop > 0 || dx > Math.abs(dy)) { pull = null; ptr.style.cssText = ''; return; }
+  pull.dy = dy;
+  const d = Math.max(0, Math.min(dy / 2, 70));
+  ptr.style.transform = `translate(-50%, ${d}px) rotate(${dy * 2}deg)`;
+  ptr.style.opacity = String(Math.min(1, d / 50));
+  ptr.classList.toggle('ready', dy > 120);
+}, { passive: true });
+main.addEventListener('touchend', () => {
+  if (pull && pull.dy > 120) {
+    ptr.classList.add('spin');
+    location.reload();
+  } else {
+    ptr.style.cssText = '';
+    ptr.classList.remove('ready');
+  }
+  pull = null;
+});
+
 window.addEventListener('hashchange', render);
 applyTheme();
 data.loadIndex().then((ix) => {
@@ -179,6 +212,6 @@ data.loadIndex().then((ix) => {
   console.error(e);
 });
 
-if ('serviceWorker' in navigator && location.protocol === 'https:') {
+if ('serviceWorker' in navigator && window.isSecureContext) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
 }
