@@ -1,6 +1,6 @@
 # Refreshes data/ from the Adyatithi panchaanga's published data (the adyatithi/panchaanga
 # repository's data/ folder) once a week, and commits it if anything changed. The app never reads
-# the panchaanga site itself.
+# the panchaanga site itself. After a refresh it starts the Pages deploy.
 name: Data
 on:
   schedule:
@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write   # to start the Pages deploy after a refresh
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,4 +34,8 @@ jobs:
             git add data
             git commit -m "Refresh data from the panchaanga ($(jq -r .build.date data/index.json))"
             git push
+            # A push made with the workflow's token starts no other workflow, so start the deploy.
+            gh workflow run pages.yml --ref main
           fi
+        env:
+          GH_TOKEN: ${{ github.token }}
