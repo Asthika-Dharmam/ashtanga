@@ -26,5 +26,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+      # The deploy sometimes looks for the upload before GitHub lists it ("No artifacts named
+      # github-pages were found"); a short wait avoids that.
+      - name: Let the upload settle
+        run: sleep 20
       - id: deployment
         uses: actions/deploy-pages@v4
